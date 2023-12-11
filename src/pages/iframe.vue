@@ -1,6 +1,6 @@
 <script setup lang="ts" generic="T extends any, O extends any">
 function aa() {
-  window.postMessage('Hello from parent window!', '*')
+  window.parent.postMessage('Hello from parent window!', '*')
 }
 </script>
 
