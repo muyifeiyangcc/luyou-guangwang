@@ -1,6 +1,8 @@
 <script setup lang="ts" generic="T extends any, O extends any">
 function aa() {
-  window.parent.postMessage('Hello from parent window!', '*')
+  window.parent.postMessage({
+    target: 'chatPay',
+  }, '*')
 }
 </script>
 
